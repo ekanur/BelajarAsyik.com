@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+margin: 0;
+padding: 0;
+overflow: hidden;
+font-family:Arial, Helvetica, sans-serif;
+}
+@font-face{
+	src: url(../font/Bazar.ttf);
+	font-family: bazar;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform : rotate(-10deg); }
+	50% { -webkit-transform : rotate(10deg); }
+	100% { -webkit-transform : rotate(-10deg); }
+}
+@-moz-keyframes spin {
+	0% { -moz-transform : rotate(-10deg); }
+	50% { -moz-transform : rotate(10deg); }
+	100% { -moz-transform : rotate(-10deg); }
+}
+@keyframes spin {
+	0% { -webkit-transform : rotate(-10deg); }
+	50% { -webkit-transform : rotate(10deg); }
+	100% { -webkit-transform : rotate(-10deg); }
+}
+@keyframes cloud {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+@-webkit-keyframes cloud {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+@-moz-keyframes cloud {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+@-o-keyframes cloud {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+@-ms-keyframes cloud {
+	0% { margin-left: 1000px; }
+	100% { margin-left: -1000px; }
+}
+body{
+background-repeat: no-repeat;
+/*background-image: linear-gradient( bottom, #FFFFFF 0%, #00A3ef 180%);
+background-image: -moz-linear-gradient( bottom, #FFFFFF 0%, #00A3ef 180%);
+background-image: -webkit-linear-gradient( bottom, #FFFFFF 0%, #00A3ef 180%);
+background-image: -o-linear-gradient( bottom, #FFFFFF 0%, #00A3ef 180%);
+background-image: -ms-linear-gradient( bottom, #FFFFFF 0%, #00A3ef 180%);*/
+background-attachment:fixed;
+background-image: url(../../img/bg_mini.jpg);
+background-repeat:no-repeat;
+width: 100%;
+height: 100%;
+}
+.cloud1 {
+	background: url("../images/awan1.png") no-repeat;
+	width: 250px;
+	height: 100px;
+	-webkit-animation: cloud 20s linear infinite;
+	-moz-animation: cloud 20s linear infinite;
+	top: 200px;
+	left: 500px;
+	opacity: 0.5;
+	position: absolute;
+}
+.cloud2 {
+	background: url("../images/awan2.png") no-repeat;
+	width: 300px;
+	height: 156px;
+	-webkit-animation: cloud 50s linear infinite;
+	-moz-animation: cloud 50s linear infinite;
+	top: 60px;
+	opacity: 0.5;
+	position: absolute;
+}
+.cloud3 {
+	background: url("../images/awan3.png") no-repeat;
+	width: 250px;
+	height: 178px;
+	left: 50px;
+	-webkit-animation: cloud 20s linear infinite;
+	-moz-animation: cloud 20s linear infinite;
+	top: 200px;
+	opacity: 0.5;
+	position: absolute;
+}
+.btn {
+	color: #FFF;
+	width: 100px;
+	height: 20px;
+	background: #BFE04B;
+	border-bottom: 3px solid rgba(0,0,0,0.2);
+	border-radius: 7px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 5px;
+	float: left;
+	margin: 0px 5px;
+}
+.btn:hover {
+	border-top: 3px solid rgba(0,0,0,0.2);
+	border-bottom: none;
+}
+.boxTau{
+	background: url(../images/frame.png) no-repeat;
+	z-index: 99999;
+	position: absolute;
+	right: 0;
+	width: 200px;
+	height: 270px;
+	bottom: 1px;
+}
+a {
+	text-decoration: none;
+}
+.slideTau{
+	margin: 40px;
+}
+
+.slideTau .isi {
+	text-align:center;
+	width:99999px;
+}
+
+.slideTau .item {
+	width:120px;
+	float:left;
+	color:white;
+	font-size: 12px;
+
+}
+
+#container {
+   width:100%;
+   height:100%;
+}
+
+.headmenu{
+	cursor: pointer;
+	height: 30px;
+	padding: 10px;
+	border-radius: 5px;
+	border-bottom: 4px solid #eaeaea;
+	margin-bottom: 5px;
+	background: #f8f8f8;
+	width: 100%;
+	top:0;
+	position:absolute;
+}
+.btnHead{
+  color: #ffffff;
+  padding: 5px;
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+#pohon{
+	background: url("../images/pohon.png");
+	float: right;
+	height: 500px;
+	width: 289px;
+	position:absolute;
+	right:0px;
+	bottom:100px;
+	z-index: 5;
+}
+#board{
+	background: url(../images/cantolan.png) no-repeat;
+	height: 89px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 365px;
+	
+	-webkit-animation: spin 1000ms ease-out infinite;
+	-webkit-transform-origin: 50% 0%;
+	-moz-animation: spin 1000ms ease-out infinite;
+	-moz-transform-origin: 50% 0%;
+	-o-animation: spin 1000ms ease-out infinite;
+	-o-transform-origin: 50% 0%;
+	-ms-animation: spin 1000ms ease-out infinite;
+	-ms-transform-origin: 50% 0%;
+	z-index: 7;
+}
+
+#rumah{
+	width: 1365px;
+	height: 530px;
+	position:absolute;
+	left:0;
+	right:0;
+	margin: 0px auto;
+	bottom: 110px;
+	/*background: url("../images/house.png");*/
+	z-index: 6;
+}
+#bg{
+	width: 1365px;
+	height: 530px;
+	position:absolute;
+	left:0;
+	bottom: 110px;
+	/*background: url("../images/bg.png");*/
+	z-index: 4;
+}
+#bg_kanan{
+	width: 1365px;
+	height: 530px;
+	position:absolute;
+	right:0;
+	bottom: 110px;
+	background: url("../images/bgrg.png");
+	z-index: 4;
+}
+
+#footer{
+	height: auto;
+	width: 100%;
+	/*background:url('../images/footer.png') repeat-x;*/
+	position:absolute;
+	bottom:10px;
+	padding:10px;
+	/*z-index: 8;*/
+}
+.house{
+	/*background:url(../images/rumah.png) no-repeat;*/
+	width: auto;
+	height: 480px;
+	position:absolute;
+	z-index: 6;
+	left:0;
+	right:0;
+	margin: 0px 0px 0px 0px;
+
+}
+
+.btnroom {
+	opacity:0.888;
+	text-align: center;
+	
+	color:white;
+}
+
+.btnroom > h3 {
+	margin-top:50px;
+	font-size:30px;
+	
+		font-family: bazar;
+}
+
+.kitchen {
+	position:absolute;
+	background: #AC193D;
+	
+	width: 210px;
+height: 166px;
+top: 162px;
+left: 745px;
+	
+}
+
+.about {
+	position:absolute;
+	background:#008299;
+	
+	width: 210px;
+height: 166px;
+top: 333px;
+left: 745px;
+	
+}
+
+.bedroom {
+position:absolute;
+background:#D24726;
+	
+width: 425px;
+height: 166px;
+top: 162px;
+left: 315px;
+
+	
+	
+}
+
+.livingroom {
+position:absolute;
+background:#2672EC;
+height: 166px;
+width: 210px;
+top: 332px;
+left: 315px;
+
+	
+}
+
+.bathroom {
+	position: absolute;
+background:#8C0095 ;
+width: 209px;
+height: 165px;
+top: 332px;
+left: 531px;
+	
+	
+}
