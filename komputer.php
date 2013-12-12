@@ -1,13 +1,25 @@
 <?php include("header.php"); ?>
- <div class="roof"></div>
+  <div class="roof">
+ 	<div class="container">
+ 		<br/>
+ 		<div class="row-fluid">
+ 			<div class="span1">
+ 			<div id="back"><a href="index.php" id="btn-back"><img id="img-back" src="img/left.png" width=36 height=36></a></div></div>
+ 			<div class="span8"><div id="title"><h1>Peripheral Komputer</h1></div></div>
+
+ 		</div>
+ 		<div class="row-fluid"><div class="span12 offset1" style="padding:1px 10px"></div></div>
+ 	</div>
+ </div>
  <div class="television">
     <div id="content">
      <div class="slider">
       <div class="content-slider">
-      	<div class="item"><img src="assets/images/barang/pasta.png"/> <h2>TOOTH PASTA</h2></div>
-        <div class="item"><img src="assets/images/barang/sabun.png"/> <h2>SOAP</h2></div>
-        <div class="item"><img src="assets/images/barang/tisu.png"/> <h2>TISSUE</h2></div>
-        <div class="item"><img src="assets/images/barang/sikat.png"/> <h2>TOOTH BRUSH</h2></div>
+      	<div class="item"><img src="assets/images/barang/tv.png"/> <h2>TELEVISION</h2></div>
+        <div class="item"><img src="assets/images/barang/bunga.png"/> <h2>FLOWER</h2></div>
+        <div class="item"><img src="assets/images/barang/lampu.png"/> <h2>LAMP</h2></div>
+        <div class="item"><img src="assets/images/barang/kursi.png"/> <h2>CHAIR</h2></div>
+        <div class="item"><img src="assets/images/barang/table.png"/> <h2>TABLE</h2></div>
        </div>
   	  </div>
       <div class="nav">
@@ -16,7 +28,6 @@
     </div>
  </div> 
 
-  
  <script>
 
  i = 0;
@@ -83,25 +94,31 @@ var countItem = 4;
 	 switch(i){
 	 	case 1 :
 			var audioElement = document.createElement('audio');
-			audioElement.setAttribute('src', './assets/sound/toothpasta.mp3');
+			audioElement.setAttribute('src', './assets/sound/television.mp3');
 			audioElement.setAttribute('autoplay','autoplay');
 			audioElement.play();
 			break;
 		case 2 :
 			var audioElement = document.createElement('audio');
-			audioElement.setAttribute('src', './assets/sound/soap.mp3');
+			audioElement.setAttribute('src', './assets/sound/flower.mp3');
 			audioElement.setAttribute('autoplay','autoplay');
 			audioElement.play();
 			break;
 		case 3 :
 			var audioElement = document.createElement('audio');
-			audioElement.setAttribute('src', './assets/sound/tissue.mp3');
+			audioElement.setAttribute('src', './assets/sound/lamp.mp3');
 			audioElement.setAttribute('autoplay','autoplay');
 			audioElement.play();
 			break;
 		case 4 :
 			var audioElement = document.createElement('audio');
-			audioElement.setAttribute('src', './assets/sound/brushtooth.mp3');
+			audioElement.setAttribute('src', './assets/sound/chair.mp3');
+			audioElement.setAttribute('autoplay','autoplay');
+			audioElement.play();
+			break;
+		case 5 :
+			var audioElement = document.createElement('audio');
+			audioElement.setAttribute('src', './assets/sound/table.mp3');
 			audioElement.setAttribute('autoplay','autoplay');
 			audioElement.play();
 			break;

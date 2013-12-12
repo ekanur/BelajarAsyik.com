@@ -4,7 +4,7 @@
 margin: 0;
 padding: 0;
 overflow: hidden;
-font-family:Arial, Helvetica, sans-serif;
+font-family:'Segoe UI', Arial, Helvetica, sans-serif;
 }
 @font-face{
 	src: url(../font/Bazar.ttf);
@@ -90,7 +90,7 @@ height: 100%;
 	opacity: 0.5;
 	position: absolute;
 }
-.btn {
+.tombol {
 	color: #FFF;
 	width: 100px;
 	height: 20px;
@@ -104,7 +104,7 @@ height: 100%;
 	float: left;
 	margin: 0px 5px;
 }
-.btn:hover {
+.tombol:hover {
 	border-top: 3px solid rgba(0,0,0,0.2);
 	border-bottom: none;
 }
@@ -280,6 +280,28 @@ left: 745px;
 height: 166px;
 top: 333px;
 left: 745px;
+	
+}
+
+.kd {
+	position:absolute;
+	background:#008A00;
+	
+	width: 210px;
+height: 166px;
+top: 333px;
+left: 960px;
+	
+}
+
+.simulasi {
+	position:absolute;
+	background:#094AB2;
+	
+	width: 210px;
+height: 166px;
+top: 162px;
+left: 960px;
 	
 }
 

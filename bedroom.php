@@ -1,5 +1,7 @@
 <?php include("header.php"); ?>
- <div class="roof"></div>
+ <div class="roof">
+ 	<div class="title"><div id="back"></div><div id="title">Title</div></div>
+ </div>
  <div class="television">
     <div id="content">
      <div class="slider">

@@ -1,5 +1,16 @@
 <?php include("header.php"); ?>
-<div class="roof"></div>
+<div class="roof">
+ 	<div class="container">
+ 		<br/>
+ 		<div class="row-fluid">
+ 			<div class="span1">
+ 			<div id="back"><a href="kuis.php" id="btn-back"><img id="img-back" src="img/left.png" width=36 height=36></a></div></div>
+ 			<div class="span8"><div id="title"><h1>HOME / KUIS / KUIS 2</h1></div></div>
+
+ 		</div>
+ 		<div class="row-fluid"><div class="span11 offset1" style="padding:1px 10px; text-align:justify; color:#222"></div></div>
+ 	</div>
+ </div>
 <div class="television">
     <div id="content">
 <canvas id="stage" width="800" height="500">
@@ -53,16 +64,16 @@ function onLoad(){
 	console.log(textChoice);
 	shuffle(textChoice);
 	console.log(textChoice);
-	contT[1] = new createjs.Text("MOHON MAAF CONTENT BELUM SEMPAT DIBUAT",'30px bazar','#FFFFFF');
+	// contT[1] = new createjs.Text("MOHON MAAF CONTENT BELUM SEMPAT DIBUAT",'30px bazar','#FFFFFF');
 	stage.addChild(contT[1]);
-	/*for(i = 0;i<5;i++) {
+	for(i = 0;i<5;i++) {
 		
 		contT[i].textAlign = "center";
 		contT[i].textBaseline = "middle";
 		contT[i].x = 300 +(40 * i);
 		contT[i].y = 280;
 		stage.addChild(contT[i]);
-	}*/
+	}
 	
 	for(i = 0;i<10;i++) {
 	

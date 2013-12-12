@@ -14,7 +14,5 @@
 </head>
 <body>
 
-<div class="headmenu">
-    
-</div>
+
 <div id="container">
