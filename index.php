@@ -14,11 +14,11 @@
                      </div>
                 </div>
             </div> -->
-            <a href="kuis.php"><div class="kitchen btnroom"><h3>KUIS</h3></div></a>
+             <a href="" data-target="#Modal2" role="button" class="" data-toggle="modal"><div class="kitchen btnroom"><h3>BANTUAN</h3></div></a>
+            <a href="drag.php"><div class="kd btnroom"><h3>KUIS</h3></div></a>
             <a href="topologi.php"><div class="about btnroom"><h3>TOPOLOGI JARINGAN</h3></div></a>
             
-            <a href="" data-target="#Modal2" role="button" class="" data-toggle="modal"><div class="kd btnroom"><h3>BANTUAN</h3></div></a>
-            <a href="simulasi.php"><div class="simulasi btnroom"><h3>SIMULASI</h3></div></a>
+            <!-- <a href="simulasi.php"><div class="simulasi btnroom"><h3>SIMULASI</h3></div></a> -->
             <a href="komputer.php" class=""><div class="livingroom btnroom"><h3>PERIPHERAL KOMPUTER</h3></div></a>
             
             <a href="" data-target="#Modal" role="button" class="" data-toggle="modal"><div class="bedroom btnroom"><h3>KOMPETENSI DASAR</h3></div></a>

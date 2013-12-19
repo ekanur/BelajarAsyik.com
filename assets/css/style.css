@@ -231,8 +231,11 @@ a {
 	width: 100%;
 	/*background:url('../images/footer.png') repeat-x;*/
 	position:absolute;
-	bottom:10px;
+	bottom:0px;
 	padding:10px;
+	background-color: #121212;
+	opacity: 0.45;
+	color:#fefefe;
 	/*z-index: 8;*/
 }
 .house{
@@ -265,7 +268,7 @@ a {
 	position:absolute;
 	background: #AC193D;
 	
-	width: 210px;
+	width: 425px;
 height: 166px;
 top: 162px;
 left: 745px;

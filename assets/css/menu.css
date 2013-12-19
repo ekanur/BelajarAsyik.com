@@ -111,9 +111,11 @@ h2{
 		text-align:center;
 	}
  	.item{
-		margin: 0px auto;
+		margin: 0px 50px 0px 5px;
 		float:left;
 		color: #FFF;
+		height:auto;
+		width:720px;
 	}
 	.item img {
 		margin :0 auto;
@@ -166,7 +168,7 @@ h2{
 	}
 	
 .ballon{
-	background:url(../images/gamemenu3.png) no-repeat;
+	/*background:url(../images/gamemenu3.png) no-repeat;*/
 	width: 200px;
 	height: 200px;
 	margin: 5px;

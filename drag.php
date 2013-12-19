@@ -1,5 +1,16 @@
 <?php include("header.php"); ?>
-<div class="roof"></div>
+<div class="roof">
+ 	<div class="container">
+ 		<br/>
+ 		<div class="row-fluid">
+ 			<div class="span1">
+ 			<div id="back"><a href="index.php" id="btn-back"><img id="img-back" src="img/left.png" width=36 height=36></a></div></div>
+ 			<div class="span8"><div id="title"><h1>HOME / KUIS / TEBAK GAMBAR</h1></div></div>
+
+ 		</div>
+ 		<div class="row-fluid"><div class="span11 offset1" style="padding:1px 10px; text-align:justify; color:#222"></div></div>
+ 	</div>
+ </div>
 <div class="television">
     <div id="content">
 <canvas width="800" height="500"  id="stage" >
@@ -8,11 +19,11 @@
 <script>
 var stage;
 var choiceBitmap = [];
-var quest = ['REFRIGRATOR ','CHAIR','TOOTH PASTA', 'FAN', 'LAMP'];
+var quest = ['Memberi perintah kepada komputer dengan cara menuliskannya atau menekan kombinasi beberapa tombol','Berfungsi menampilkan proses dan hasil pekerjaan komputer','Berfungsi untuk mengendalikan kursor/pointer dilayar monitor', 'Sarana penghubung antara kabel dengan colokan NIC (Network Interface Card) yang ada pada komputer', 'Digunakan untuk menyatukan kabel-kabel network dari tiap workstation, server atau perangkat lainnya', 'Jaringan ini hanya terdiri dari satu saluran kabel yang menggunakan kabel BNC dan kedua ujungnya diakhiri oleh sebuah terminator', 'Topologi ini secara fisik membentuk suatu lingkaran', 'Topologi jaringan yang berupa konvergensi dari node tengah ke setiap node atau pengguna'];
 
-var imageChoice1 = ['kulkas', 'mangkok', 'sikat', 'jam', 'lampu'];
-var imageChoice2 = ['kipas','kursi','pasta','kipas','pasta'];
-var answer = [0,1,1,1,0];
+var imageChoice1 = ['keyboard', 'monitor', 'mouse', 'switch', 'switch', 'topologi_star', 'topologi_mesh', 'topologi_star'];
+var imageChoice2 = ['monitor','printer','keyboard','connector','server', 'topologi_bus', 'topologi_ring', 'topologi_bus'];
+var answer = [0,0,0,1,0,1,1,0];
 var boxTarget;
 var queue;
 var iQuest = 0;
@@ -34,14 +45,17 @@ function init() {
 	queue.addEventListener('complete',onLoad);
 	queue.loadManifest([
 		{id:"drop",src:"assets/images/drop.png"},
-		{id:"kulkas",src:"assets/images/barang/110/kulkas.png"},
-		{id:"mangkok",src:"assets/images/barang/110/mangkok.png"},
-		{id:"sikat",src:"assets/images/barang/110/sikat.png"},
-		{id:"jam",src:"assets/images/barang/110/jam.png"},
-		{id:"lampu",src:"assets/images/barang/110/lampu.png"},
-		{id:"kipas",src:"assets/images/barang/110/kipas.png"},
-		{id:"kursi",src:"assets/images/barang/110/kursi.png"},
-		{id:"pasta",src:"assets/images/barang/110/pasta.png"},
+		{id:"keyboard",src:"assets/images/barang/110/keyboard.jpg"},
+		{id:"monitor",src:"assets/images/barang/110/monitor.jpg"},
+		{id:"printer",src:"assets/images/barang/110/printer.jpg"},
+		{id:"mouse",src:"assets/images/barang/110/mouse.jpg"},
+		{id:"switch",src:"assets/images/barang/110/switch.jpg"},
+		{id:"connector",src:"assets/images/barang/110/rj45.jpg"},
+		{id:"server",src:"assets/images/barang/110/server.jpg"},
+		{id:"topologi_star",src:"assets/images/barang/110/topologi-star.jpg"},
+		{id:"topologi_bus",src:"assets/images/barang/110/topologi-bus.jpg"},
+		{id:"topologi_mesh",src:"assets/images/barang/110/topologi+mesh.jpg"},
+		{id:"topologi_ring",src:"assets/images/barang/110/topologi-ring.gif"},
 		{id:"benar",src:"assets/images/benar.png"},
 		{id:"salah",src:"assets/images/salah.png"},
 		{id:"pigora",src:"assets/images/barang/110/pigora.png"},
@@ -57,11 +71,13 @@ function onLoad(){
 	boxTarget.x = 375;
 	boxTarget.y = 70;
 	boxTarget.regX = 50;
-	textQuest = new createjs.Text(quest[iQuest],'30px bazar', '#FFFFFF');
+	textQuest = new createjs.Text(quest[iQuest],'15px Segoe UI', '#FFFFFF');
 	textQuest.textAlign = "center";
+	textQuest.width=50;
+	textQuest.height=100;
 	textQuest.textBaseline = "middle";
 	textQuest.x = 400;
-	textQuest.y = 40;
+	textQuest.y = 250;
 	stage.addChild(textQuest);
 	
 	
@@ -234,5 +250,6 @@ function showScore(){
 
 </script>
 </div>
+<a href="http://localhost/project/tubes_mm/BelajarAsyik.com/assets/simulasi/TesHardwareJaringan.swf" class="btn btn-default">KUIS LAIN >></a>
 </div>
 <?php include("footer.php"); ?>
